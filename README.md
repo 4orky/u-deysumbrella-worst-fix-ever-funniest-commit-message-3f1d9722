@@ -6,15 +6,15 @@
 
 The funniest one-line commit message for a bug fix that made everything worse. The program writes one commit message to `/output/entry.txt`:
 
-> fix: the memory leak is gone - the app now forgets everything, including the fix
+> fix: optimized the query from 30s to 3ms by returning the wrong rows faster
 
 ## Why this line
 
-- **Really a commit message about a fix that backfired.** It opens with `fix:`, names the repair (plugging a memory leak), and the repair itself is the new breakage.
-- **A real joke that lands on its own.** The second clause turns the first: the app "forgets everything" — and the fix is one of the things it forgot.
-- **The irony is specific to this kind of fix.** The repair worked exactly as designed; the design was the disaster. The fix became the bug it was meant to kill.
-- **Sounds like a real commit subject.** Short, plain, 80 characters — the kind of line a tired engineer types at the end of a bad day.
-- **Fresh angle.** No revert, no testing in production, no "broke everything" — the punchline is amnesia, not destruction.
+- **Really a commit message about a fix that backfired.** It opens with `fix:`, names the repair (optimizing a slow query), and the repair itself is the new breakage.
+- **A real joke that lands on its own.** The speed brag — 30s down to 3ms — is undercut in the same breath: the rows are wrong, so the speedup is a lie.
+- **The irony is specific to this kind of fix.** The optimization worked exactly as measured; the measurement was the disaster. Faster, and wrong.
+- **Sounds like a real commit subject.** Short, plain, 75 characters — the kind of line a tired engineer types at the end of a bad day.
+- **Fresh angle.** No revert, no testing in production, no "broke everything" — the punchline is a performance win that wins at the wrong thing.
 
 ## Run it
 
